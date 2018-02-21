@@ -16,8 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.urls import include
+# from django.http import HttpResponseRedirect
+# from django.http import Http404
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    # path('', Http404),
+    path('admin/', admin.site.urls, name='admin_url'),
     path('polls/', include("polls.urls")),
 ]
