@@ -101,4 +101,4 @@ ENV/
 .mypy_cache/
 
 # django migrations files
-migrations/\d_.*\.py
+migrations/\d+_.*\.py
