@@ -17,8 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from django.urls import include
 
+# from users. import funs
+
 urlpatterns = [
     # path('', Http404),
     path('admin/', admin.site.urls, name='admin_url'),
+    # path('register/', admin.site.urls, name='register_url'),
+    path('accounts/', include('users.urls')),
     path('polls/', include("polls.urls")),
 ]
